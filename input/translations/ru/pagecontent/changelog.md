@@ -8,6 +8,8 @@
 
 [Система кодов ICCC-3](CodeSystem-iccc-3-cs.html) перенесена с канонического URL DHP `https://terminology.dhp.uz/fhir/core/CodeSystem/iccc-3-cs` на `http://terminology.hl7.org/CodeSystem/iccc-3` - канонический URL HL7 Terminology для этой классификации IARC (его использует руководство HL7 Europe PanCareSurPass), поскольку классификация принадлежит IARC, а не DHP. [Набор значений](ValueSet-iccc-3-vs.html) сохраняет свой URL.
 
+Наборы значений [ISO 3166 часть 1, двухбуквенные коды](ValueSet-iso-3166-2-vs.html) и [без Узбекистана](ValueSet-iso-3166-2-vs-sans-uz.html) больше не объявляют [дополнение ISO 3166](CodeSystem-iso3166-two-letter-cs.html) обязательным через `valueset-supplement`. Обязательное дополнение может быть применено только если базовая система кодов загружена локально либо набор значений уже развёрнут; `urn:iso:std:iso:3166` доступна только на терминологическом сервере, а набор значений из зависимого пакета никогда не разворачивается, поэтому валидаторы отклоняли каждый экземпляр, привязанный к этим наборам, с ошибкой `Required supplement not found`. Проблема проявилась на `example-hepatitis-patient` в uz.dhp.integrations под IG Publisher 2.3.4, который исправил NullPointerException, ранее её скрывавший. Само дополнение не изменилось и по-прежнему передаётся терминологическому серверу, поэтому узбекские и русские обозначения продолжают применяться.
+
 #### Несовместимые изменения
 
 Профиль UZ Core VaccinationActivityDefinition переименован в [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html), а его канонический URL изменён с `.../uz-core-vaccination-activity-definition` на `.../uz-core-activitydefinition`. Реализациям, использующим старый канонический URL, необходимо обновить ссылку.
