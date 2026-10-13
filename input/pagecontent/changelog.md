@@ -12,6 +12,8 @@ Four value sets that kept only part of the base FHIR value set they replace now 
 
 #### Added
 
+[Diagnosis types](CodeSystem-diagnosis-type-cs.html) add `gencl-0001-00013` "Diagnosis of a combined disease" (сочетанное заболевание), with Uzbek and Russian designations, so screening applications can send every diagnosis type their forms offer.
+
 The [screening program registry](ValueSet-screening-program-type-vs.html) contains eight SNOMED CT screening codes and all retained national screening/home visit codes. DMED breast/cervical program codes mserv-0007-00007 and mserv-0007-00009 are restored as distinct program identifiers; their clinical codes remain SNOMED CT. Screening invitation examples reuse the existing Core profiles.
 
 ### Version 0.11.0

@@ -12,6 +12,8 @@ O'zi almashtiradigan asosiy FHIR to'plamining faqat bir qismini saqlagan to'rtta
 
 #### Qo'shildi
 
+[Tashxis turlari](CodeSystem-diagnosis-type-cs.html) `gencl-0001-00013` "Qo'shma kasallik tashxisi" kodi bilan to'ldirildi (o'zbek va rus tilidagi nomlari bilan), shunda skrining tizimlari o'z shakllaridagi barcha tashxis turlarini yubora oladi.
+
 [Skrining dasturlari reestri](ValueSet-screening-program-type-vs.html) sakkizta SNOMED CT kodini va saqlangan milliy skrining/patronaj kodlarini oladi. mserv-0007-00007 va mserv-0007-00009 DMED dasturlarining alohida identifikatorlari sifatida tiklanadi; klinik kodlari SNOMED CT bo'lib qoladi. Taklif misollari mavjud Core profillaridan foydalanadi.
 
 ### Versiya 0.11.0
