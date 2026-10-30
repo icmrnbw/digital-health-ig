@@ -1,3 +1,9 @@
+### In development
+
+#### Added
+
+[Visit measurements](ValueSet-visit-measurement-vs.html) lists the body measurements, vital signs, complaint and advice recorded as Observations during a visit, such as a home nursing visit. Its [LOINC](CodeSystem-visit-measurement-loinc-cs.html) and [SNOMED CT](CodeSystem-visit-measurement-sct-cs.html) supplements give each code an Uzbek and a Russian display, so a patient portal can label height, weight, BMI, waist circumference, temperature, blood pressure, oxygen saturation, chief complaint and advice in the user's language instead of the English LOINC or SNOMED CT name.
+
 ### Version 0.12.0
 
 #### Added
