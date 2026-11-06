@@ -14,6 +14,8 @@ Added [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), a general p
 
 [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records the location the items were dispatched from, such as the sending warehouse in a transfer between warehouses, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension. Base FHIR SupplyDelivery has no element for it; the extension is the delivery counterpart of `SupplyRequest.deliverFrom`. The [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html) shows it. The profile page has a narrative intro and a Quick Start.
 
+[Visit measurements](ValueSet-visit-measurement-vs.html) lists the body measurements, vital signs, complaint and advice recorded as Observations during a visit, such as a home nursing visit. Its [LOINC](CodeSystem-visit-measurement-loinc-cs.html) and [SNOMED CT](CodeSystem-visit-measurement-sct-cs.html) supplements give each code an Uzbek and a Russian display, so a patient portal can label height, weight, BMI, waist circumference, temperature, blood pressure, oxygen saturation, chief complaint and advice in the user's language instead of the English LOINC or SNOMED CT name.
+
 #### Changed
 
 `basedOn` in [UZ Core Observation](StructureDefinition-uz-core-observation.html), [UZ Core Immunization](StructureDefinition-uz-core-immunization.html) and [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) now references a UZ Core CarePlan instead of any CarePlan.
