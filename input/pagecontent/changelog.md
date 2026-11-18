@@ -46,6 +46,8 @@ Every profile page now has a narrative intro and a Quick Start. New ones were ad
 
 #### Changed
 
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` can also reference a [UZ Core Device](StructureDefinition-uz-core-device.html) or a [UZ Core Organization](StructureDefinition-uz-core-organization.html), for events with no person behind them, such as a scheduled job or a system logging in.
+
 [Allergen codes](ValueSet-allergen-codes-vs.html) now include [INN medicine names](CodeSystem-inn-medication-name-cs.html), so a drug allergy can name the active substance, as the [analgesic allergy example](AllergyIntolerance-example-analgesic-allergy.html) now does for paracetamol.
 
 ConceptMap fixes found by IG Publisher 3.0.1 checks: 24 positions in the [DMED position map](ConceptMap-dmed-position-to-dhp-position-cm.html) move, including two nurse positions off physician codes. The [laboratory code map](ConceptMap-lab-pan-codes-to-loinc.html) corrects urine microscopy, plateletcrit, syphilis and spermatozoa codes, and the manual differential, ESR and Ureaplasma IgG are no longer equivalent. The [allergy substance map](ConceptMap-substance-to-snomed.html) maps hazelnut and walnut components to the food and corrects the wasp codes.

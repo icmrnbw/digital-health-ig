@@ -29,7 +29,7 @@ AuditEvents are written by the platform, not by clients, so you mostly read them
 
 #### A representative event (a login)
 
-A self-contained event names what happened (`code`), its grouping (`category`), the `action` (E = execute), when it `occurredDateTime` and was `recorded`, the `outcome.code`, the `agent` who did it, and the `source` that logged it. The `agent.who` is a plain `Reference` and may point at a PractitionerRole, Practitioner, Patient or RelatedPerson:
+A self-contained event names what happened (`code`), its grouping (`category`), the `action` (E = execute), when it `occurredDateTime` and was `recorded`, the `outcome.code`, the `agent` who did it, and the `source` that logged it. The `agent.who` is a plain `Reference` and may point at a PractitionerRole, Practitioner, Patient, RelatedPerson, Device or Organization:
 
 ```json
 {
